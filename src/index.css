@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  border: 3px solid red;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  margin-bottom: -40px;
+  z-index: 9;
+  position: relative;
+}
+
+.dot .pre {
+  font-family: 'MV Boli', cursive;
+  font-size: 1.8rem;
+  color: red;
+  margin-top: 10%;
+}
+
+.clock {
+  font-family: fantasy;
+  float: right;
+  margin: 9px;
+}
+
+/* pre{
+  white-space: ;
+} */
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  color: red;
+  box-shadow: rgb(0 0 0 / 15%) 0 -1px 7px 3px, inset #ec0b0b 0 -1px 9px, rgb(255 0 0 / 50%) 0 2px 12px;
+    border-radius: 50%;
+  /* float: right; */
+  /* margin: 16px 0px 16px 16px; */
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink_me2 {
+  /* animation: blinker 1s linear infinite; */
+  color: green;
+  /* float: right; */
+  /* margin: 16px 0px 16px 16px; */
+}
+
+@media screen and (max-width: 480px) {
+  pre {
+    white-space: pre-wrap;
+  }
+
+  .ml-5,
+  .mx-5 {
+    margin-left: 0.7rem !important;
+  }
+
+  .mr-5,
+  .mx-5 {
+    margin-right: 0.7rem !important;
+  }
+
+  .clock {
+    font-family: fantasy;
+    float: right;
+    margin: 9px;
+  }
+}
+
+#timer {
+  position: fixed;
+  right: 0;
+  top: 20%;
+  width: 8em;
+  /* margin-top: -2.5em; */
+}
